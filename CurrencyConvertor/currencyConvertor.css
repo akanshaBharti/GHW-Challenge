@@ -11,13 +11,33 @@ body{
     background-color: #7B6D8D;
 }
 
-.container{
+.card {
+    width: 40vh;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    transition: all .3s;
+   }
+   
+   .card2 {
     background-color: #A5C4D4 ;
     padding: 2rem;
     border-radius: 1rem;
     min-height: 45vh;
     width: 40vh;
-}
+    transition: all .2s;
+    border: #6D7275;
+   }
+   
+   .card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
 
 form{
     margin: 2rem 0 1rem 0;
@@ -72,11 +92,37 @@ form input{
     margin: 2rem 0 2rem 0;
 }
 
-form button{
+.custom-btn {
     height: 3rem;
-    background-color: #593F62;
-    color: white;
     font: 1.15rem;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background: transparent;
     cursor: pointer;
-}
-
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px #6D7275,
+      7px 7px 20px 0px rgba(0,0,0,.1),
+      4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+   }
+   
+   .btn-1 {
+    background-color: #593F62;
+    background: linear-gradient(0deg, #593F62 0%, #593F62 100%);
+    border: none;
+   }
+   .btn-1:before {
+    height: 0%;
+    width: 2px;
+   } 
+   
+   .btn-1:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                 -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+       inset -4px -4px 6px 0 rgba(255,255,255,.2),
+       inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+   }
+   
